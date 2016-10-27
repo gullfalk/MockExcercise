@@ -15,8 +15,8 @@ public class SearchEngine {
     PageReader reader;
     Map<String, Map<String,Integer>> scores = new HashMap<String, Map<String,Integer>>();
     
-    public SearchEngine() {
-        this.reader = new UrlPageReader();
+    public SearchEngine(PageReader reader) {
+        this.reader = reader;
     }
     
     public void indexPage(String url) {
